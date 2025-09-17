@@ -1,0 +1,335 @@
+/* 🧩 Importing Custom Fonts 🧩 */
+@font-face {
+	src: url("../Font/Roboto/Roboto.ttf");
+	font-family: "Roboto";
+}
+
+@font-face {
+	src: url("../Font/Roboto/Roboto\ Italic.ttf");
+	font-family: "Roboto Italic";
+}
+
+@font-face {
+	src: url("../Font/Libre\ Baskerville/Libre\ Baskerville.ttf");
+	font-family: "Libre Baskerville";
+}
+
+@font-face {
+	src: url("../Font/Libre\ Baskerville/Libre\ Baskerville\ Italic.ttf");
+	font-family: "Libre Baskerville Italic";
+}
+
+@font-face {
+	src: url("../Font/Libre\ Baskerville/Libre\ Baskerville\ Bold.ttf");
+	font-family: "Libre Baskerville Bold";
+}
+
+/* 🔄 Resetting Default Browser Styles 🔄 */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* 🧱 Base Body Styling 🧱 */
+body {
+	color: #292929;
+	position: relative;
+	font-size: 1.125rem;
+	line-height: 1.66;
+	font-weight: 400;
+	font-family: "Roboto";
+	background-color: #ffffff;
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: transparent;
+}
+
+/* 🖼️ Images And SVGs - Responsive 🖼️ */
+img,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+/* 📦 Container Styling 📦 */
+.Container {
+	width: 100%;
+	padding: 2.5rem 0.75rem;
+	z-index: 5;
+	display: flex;
+	position: relative;
+	min-height: 100vh;
+	overflow-x: hidden;
+	align-items: center;
+}
+
+/* 🧠 Centralized Content Block 🧠 */
+.Content {
+	margin: 0 auto;
+	max-width: 860px;
+	text-align: center;
+}
+
+/* 💼 Job Title Styling (h6) 💼 */
+.Content h6 {
+	color: #000000;
+	font-size: 1rem;
+	line-height: 1.2;
+	font-weight: 400;
+	font-family: "Roboto";
+	margin-bottom: 0.5rem;
+	text-transform: uppercase;
+	letter-spacing: 0.125rem;
+}
+
+/* 🧑‍🚀 Name Heading Styling (h1) 🧑‍🚀 */
+.Content h1 {
+	color: #000000;
+	padding: 0.5rem 0 1.875rem;
+	font-size: 6.25rem;
+	line-height: 1.18;
+	font-weight: 400;
+	font-family: "Libre Baskerville";
+	margin-bottom: 0.5rem;
+}
+
+/* 🧱 Responsive Row Layout 🧱 */
+.Content .Row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* 📐 Column For Introduction Text 📐 */
+.Content .Row .Column {
+	flex: 0 0 auto;
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* 📄 Paragraph Styling 📄 */
+.Content .Row .Column p {
+	font-size: 1.5rem;
+	line-height: 1.66;
+	font-weight: 300;
+	font-family: "Roboto";
+	margin-bottom: 1rem;
+	padding-bottom: 3.4375rem;
+}
+
+/* 📧 Email Section Container 📧 */
+.Content .Email {
+	margin: 0 auto;
+	height: 4.6875rem;
+	position: relative;
+	max-width: 620px;
+}
+
+/* 📨 Email Text Styling 📨 */
+.Content .Email p {
+	height: 100%;
+	display: block;
+	padding: 25px 11.875rem 0 1.25rem;
+	font-size: 1.125rem;
+	box-shadow: 0 25px 50px #0000000d;
+	transition: all 0.3s ease-in-out;
+	line-height: normal;
+	font-family: "Roboto";
+	border-radius: 10px;
+	letter-spacing: 0.03125rem;
+	background-color: #f3f3f3;
+}
+
+/* 📮 Email Button Styling 📮 */
+.Content .Email a {
+	color: #ffffff;
+	right: 6px;
+	width: 185px;
+	bottom: 12px;
+	cursor: pointer;
+	padding: 10px;
+	position: absolute;
+	font-size: 1.125rem;
+	transition: 0.3s ease-in-out;
+	font-family: "Roboto";
+	border-radius: 10px;
+	text-decoration: none;
+	background-color: #151515;
+}
+
+/* 🔁 Hover Effect For Email Button 🔁 */
+.Content .Email a:hover {
+	background-color: #252525;
+}
+
+/* 🌐 Social Media List Layout 🌐 */
+.Content .Social {
+	display: flex;
+	list-style: none;
+	margin-top: 40px;
+	padding-left: 0;
+	margin-bottom: 0;
+	justify-content: center;
+}
+
+/* 🌐 Social Media Icon Links 🌐 */
+.Content .Social li a {
+	width: 34px;
+	height: 34px;
+	margin: 0 5px;
+	display: inline-block;
+	font-size: 17px;
+	transition: all 0.3s ease-in-out;
+	text-align: center;
+	line-height: 32px;
+	border-radius: 7px;
+	text-decoration: none;
+}
+
+/* 🌀 Decorative Shapes 🌀 */
+.Shapes {
+	z-index: -1;
+	position: absolute;
+}
+
+/* 🎈 Shape 1 - Floating Animation 🎈 */
+.Container .ShapeOne {
+	top: 8%;
+	left: 45%;
+	animation: JumpTwo 5s linear infinite;
+}
+
+/* 🎈 Shape 2 - Floating Animation 🎈 */
+.Container .ShapeTwo {
+	top: 6%;
+	right: 45%;
+	animation: JumpThree 5s linear infinite;
+}
+
+/* 🧩 Static Shapes 🧩 */
+.Container .ShapeThree {
+	top: 20%;
+	right: 8%;
+}
+
+.Container .ShapeFour {
+	left: 8%;
+	bottom: 20%;
+}
+
+/* ☁️ Shape 5 - Moving Cloud Animation ☁️ */
+.Container .ShapeFive {
+	top: 20%;
+	left: 10%;
+	animation: MoveCloudOne 12s alternate infinite;
+}
+
+/* ☁️ Shape 6 - Moving Cloud Animation ☁️ */
+.Container .ShapeSix {
+	right: 10%;
+	bottom: 20%;
+	animation: MoveCloudTwo 12s alternate infinite;
+}
+
+/* 🎞️ Keyframe Animations 🎞️ */
+@keyframes JumpTwo {
+
+	0%,
+	100% {
+		transform: translate3d(0, 0, 0);
+	}
+
+	40% {
+		transform: translate3d(0, 20px, 0);
+	}
+}
+
+@keyframes JumpThree {
+
+	0%,
+	100% {
+		transform: translate3d(0, 0, 0);
+	}
+
+	40% {
+		transform: translate3d(0, -20px, 0);
+	}
+}
+
+@keyframes MoveCloudOne {
+	0% {
+		margin-left: 200px;
+	}
+
+	100% {
+		margin-left: -200px;
+	}
+}
+
+@keyframes MoveCloudTwo {
+	0% {
+		margin-right: 200px;
+	}
+
+	100% {
+		margin-right: -200px;
+	}
+}
+
+/* 📱 Responsive Design: Tablets 📱 */
+@media (max-width: 768px) {
+	.Content h6 {
+		font-size: 0.875rem;
+	}
+
+	.Content h1 {
+		font-size: 3.75rem;
+		padding-bottom: 1.25rem;
+	}
+
+	/* 📴 Hide Floating Shapes On Tablet 📴 */
+	.Container .ShapeOne,
+	.Container .ShapeTwo {
+		display: none;
+	}
+}
+
+/* 📱 Responsive Design: Mobile Phones 📱 */
+@media (max-width: 425px) {
+
+	/* 📴 Hide More Shapes On Small Screens 📴 */
+	.Container .ShapeThree,
+	.Container .ShapeFour {
+		display: none;
+	}
+
+	/* 📐 Full Width Column 📐 */
+	.Content .Row .Column {
+		width: 100%;
+	}
+
+	/* 📄 Smaller Font Size For Text 📄 */
+	.Content .Row .Column p {
+		font-size: 1.25rem;
+		padding-bottom: 1.5625rem;
+	}
+
+	/* 📬 Adjust Email Layout For Mobile 📬 */
+	.Content .Email p {
+		padding: 25px 0 1.25rem;
+		margin: 0 0 25px 0;
+	}
+
+	.Content .Email a {
+		margin: 0 auto;
+		display: block;
+		position: relative;
+	}
+
+	/* 👇 Adjust Social Media Spacing 👇 */
+	.Content .Social {
+		margin-top: 4.5rem;
+	}
+}
